@@ -7,7 +7,7 @@ package recipe3;
 /**
  *
  * @author jakewebb
- * @author Jacob
+ * @author Jordan is cool!
  */
 public class Recipe3 {
 
