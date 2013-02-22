@@ -6,7 +6,7 @@ package recipe3;
 
 /**
  *
- * @author jakewebb likes boys
+ * @author jakewebb
  * @author jenkinsmaneuver
  * @author John
  */
