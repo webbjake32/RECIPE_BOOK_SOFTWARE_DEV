@@ -10,4 +10,10 @@ public class Recipe {
     private double[] quantities;
     private String[] altIngredients;
     private double[] altQuantities;
+    private String[] instructions;
+    private int prepTime;
+    private int category;
+    private int subCategory;
+    private String[] comments;
+    private int rating;
 }
