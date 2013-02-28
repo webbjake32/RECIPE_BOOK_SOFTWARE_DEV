@@ -17,7 +17,7 @@ public class Recipe {
     private String[] comments;
     private int rating;
     
-    /**
+    /**blah
      * This method takes the user's input (all input variables signified by the
      * name "in___") and assigns it to the class variables above.
      */
