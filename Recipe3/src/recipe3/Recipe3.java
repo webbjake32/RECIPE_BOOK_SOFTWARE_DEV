@@ -11,10 +11,11 @@ import java.io.*;
 public class Recipe3 {
     public static void main(String[] args) {
         try{
-            File debugFile = new File("debug.txt");
-            FileWriter output = new FileWriter(debugFile);
-            PrintWriter debugOut = new PrintWriter(output);
-            debugOut.println("Hello World");
+            String fileName = "/debug.txt";
+            FileWriter output = new FileWriter(getClass().getResource(fileName));
+            BufferedWriter debugOut = new BufferedWriter(output);
+            System.out.println("Hi...");
+            debugOut.write("Hello World");
             debugOut.close();
             System.out.println("Hi!");
         }catch(IOException e){
@@ -22,6 +23,5 @@ public class Recipe3 {
         }
         
         //Create GUI here 
-        
     }
 }

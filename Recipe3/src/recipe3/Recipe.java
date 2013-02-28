@@ -16,4 +16,8 @@ public class Recipe {
     private int subCategory;
     private String[] comments;
     private int rating;
+    
+    public void add(){
+        
+    }
 }
