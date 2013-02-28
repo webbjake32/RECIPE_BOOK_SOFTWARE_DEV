@@ -1,19 +1,26 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package Search;
+import java.net.*;
+import java.io.*;
 
-/**
- *
- * @author jakewebb
- */
-public class Search2 {
+public class Search2
+{
+        public static void main ( String[] args ) throws IOException {
+                try {
+                        URL url = new URL("http://www.google.com/search?q=example");
+                        URLConnection conn =  url.openConnection();
+                        conn.setRequestProperty("User-Agent",
+                                        "Mozilla/5.0 (X11; U; Linux x86_64; en-GB; rv:1.8.1.6) Gecko/20070723 Iceweasel/2.0.0.6 (Debian-2.0.0.6-0etch1)");
+                        BufferedReader in = new BufferedReader(
+                                new InputStreamReader(conn.getInputStream())
+                        );
+                        String str;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+                        while ((str = in.readLine()) != null) {
+                                System.out.println(str);
+                        }
+
+                        in.close();
+                }
+                catch (MalformedURLException e) {}
+                catch (IOException e) {}
+        }
 }
